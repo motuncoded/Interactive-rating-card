@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+    <!-- Rating state start -->
+<div class="container">
+  <div class="rating-star">
+<img src="/images/icon-star.svg"alt/>
+</div>
+<h1 class="main-heading">  How did we do?</h1>
+<p class="main-paragraph">Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+  <div class="rating">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+  </div>
+
+  <div class="btn">
+    <button class="submit-btn">Submit</button>
+
+  </div>
+
+</main>
+
+
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class=" card hidden">
+    <div class="cancel"><button class="cancel-btn">x</button></div>
+    <div class="thank-container">
+<img src="/images/illustration-thank-you.svg" alt="Thank-you"/>
+    </div>
+
+    <div class="paragraph">
+      <p>You selected <span class="rate"></span> out of 5</p>
+    </div>
+ 
+
+  <h2 class="main-heading">Thank you!</h2>
+  <p class="card-paragraph">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
+  </p>
+  </div>
+ <!-- Thank you state end -->
+
+  <script src="script.js">
+
+  </script>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>-->
+  </div>
+</body>
+</html>
