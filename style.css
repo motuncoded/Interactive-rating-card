@@ -30,7 +30,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: var(--darken-blue);
-    font-family: "Over";
+    font-family: "Overpass", sans-serif;
 
 }
 main{
@@ -72,8 +72,8 @@ margin: 0 2rem;
 
 }
 form{
-    display: grid;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 fieldset{
     border: none;
@@ -101,8 +101,9 @@ place-items: center;
     border-radius: 50%;
 
 position: absolute;
-display: grid;
-place-items: center;
+display: flex;
+justify-content: center;
+align-items:center;
 cursor: pointer;
 
 }
