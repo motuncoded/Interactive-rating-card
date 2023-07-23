@@ -37,17 +37,17 @@ main{
     border-radius: 1rem;
     
 }
-.container{
-   width: 328px; 
+.rating-container, .thank-you-card{
+    width: 348px; 
+margin: 0 2rem;
       background-color: var(--dark-blue);
 
       border-radius: 1rem;
+      padding: 1.5rem;
 
-padding: 1rem;
 }
 .rating-star{
     width: fit-content;
-
     padding: .5rem;
     border-radius: 50%;
     background-color: var(--border);
@@ -56,45 +56,72 @@ padding: 1rem;
 }
 .rating-star>img{
     border-radius: 50%;
-    font-size: 1rem;
 
 
 }
 
 .main-heading{
-    font-size: 1.3rem;
     color: var(--white);
+    letter-spacing: 0.03rem;
+
 
 }
 .main-paragraph{
     color: var(--light-grey);
-    padding-bottom:.75rem ;
+    line-height: 1.35rem;
 
 }
-.rating{
+form{
+    display: grid;
+    gap: 1rem;
+}
+fieldset{
+    border: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1rem;
-
 }
-.rating > span{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+fieldset input{
+    width: 100%;
+}
+.rating-input{
+position: relative;
+    width: 38px;
+    height: 38px;
+display: grid;
+place-items: center;
     border-radius: 50%;
     background-color: var(--border);
     color: var(--medium-grey);
+}
+.rating-input:nth-child(1){
+    margin-left: -1rem;
+}
+.label-rating{
+    inset: 0;
+    border-radius: 50%;
 
+position: absolute;
+display: grid;
+place-items: center;
+cursor: pointer;
 
 }
-.clicked{
-    background-color: var(--orange) !important; 
-    color: var(--white) !important;
+input[type="radio"]{
+appearance: none;
 }
-.rating>span:hover{
+input[type="radio"]:checked + .label-rating,
+input[type="radio"]:focus + .label-rating{
+    
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+input[type="radio"]:hover  + .label-rating{
+   
+    background-color: var(--orange);
+color: var(--white);
+}
+
+.hover{
     transition: all .3s ease-in-out;
     color: var(--orange);
     background-color: var(--white);
@@ -123,33 +150,12 @@ padding: 1rem;
 .hidden{
     display: none;
 }
-.card{
-    width: 328px; 
-    background-color: var(--dark-blue);
-padding: 1rem;
-    background-color: var(--dark-blue);
+.thank-you-card{
+  
     text-align: center;
-    border-radius: 1rem;
 
 }
-.cancel{
-    display: flex;
-justify-content: end;
-align-items: center;
-}
-.cancel-btn{
-    border: 0;
-    outline: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: var(--border);
-    color: var(--light-grey);
 
-}
 
 .paragraph{
     display: flex;

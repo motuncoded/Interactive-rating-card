@@ -18,25 +18,48 @@
 <body>
 <main>
     <!-- Rating state start -->
-<div class="container">
+<div class="rating-container">
   <div class="rating-star">
-<img src="/images/icon-star.svg"alt/>
+<img src="/images/icon-star.svg"alt="" aria-hidden="true"/>
 </div>
 <h1 class="main-heading">  How did we do?</h1>
 <p class="main-paragraph">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
-  <div class="rating">
-    <span>1</span>
-    <span>2</span>
-    <span>3</span>
-    <span>4</span>
-    <span>5</span>
-  </div>
+  <form>
+    <fieldset>
+    <div class="rating-input">
+
+    <input type="radio" name="rating" id="rating_1" value="1" />
+    <label for="rating_1" class="label-rating">1</label>
+    </div>
+    <div class="rating-input">
+
+      <input type="radio" name="rating" id="rating_2" value="2" />
+      <label for="rating_2" class="label-rating">2</label>
+      </div> 
+      <div class="rating-input">
+
+        <input type="radio" name="rating" id="rating_3" value="3" />
+        <label for="rating_3" class="label-rating">3</label>
+        </div>
+         <div class="rating-input">
+
+          <input type="radio" name="rating" id="rating_4" value="4" />
+          <label for="rating_4" class="label-rating">4</label>
+          </div>
+           <div class="rating-input">
+
+            <input type="radio" name="rating" id="rating_5" value="5" />
+            <label for="rating_5" class="label-rating">5</label>
+            </div>
+    </fieldset>
+
 
   <div class="btn">
-    <button class="submit-btn">Submit</button>
+    <button type="submit" class="submit-btn">Submit</button>
 
   </div>
+</form>
 
 </main>
 
@@ -45,8 +68,8 @@
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <div class=" card hidden">
-    <div class="cancel"><button class="cancel-btn">x</button></div>
+  <div class="thank-you-card hidden">
+    <div class="cancel">
     <div class="thank-container">
 <img src="/images/illustration-thank-you.svg" alt="Thank-you"/>
     </div>
