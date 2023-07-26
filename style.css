@@ -116,10 +116,10 @@ input[type="radio"]:focus + .label-rating{
     background-color: var(--medium-grey);
     color: var(--white);
 }
-input[type="radio"]:hover  + .label-rating{
-   
+
+input[type="radio"]:not(:checked):hover + .label-rating:hover {
     background-color: var(--orange);
-color: var(--white);
+    color: var(--white);
 }
 
 .hover{
