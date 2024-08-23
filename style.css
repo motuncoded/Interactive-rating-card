@@ -38,8 +38,8 @@ main{
     
 }
 .rating-container, .thank-you-card{
-    width: 348px; 
-margin: 0 2rem;
+    max-width: 348px; 
+    width:calc(100% - 1rem);
       background-color: var(--dark-blue);
 
       border-radius: 1rem;
