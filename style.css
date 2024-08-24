@@ -38,7 +38,7 @@ main{
     
 }
 .rating-container, .thank-you-card{
-    max-width: 348px; 
+    max-width: 324px; 
     width:calc(100% - 1rem);
       background-color: var(--dark-blue);
 
@@ -178,4 +178,9 @@ input[type="radio"]:not(:checked):hover + .label-rating:hover {
     color: var(--light-grey);
     text-align: center;
 
+}
+@media screen and (max-width:400px) {
+.rating-container, .thank-you-card{
+    max-width: 300px; 
+}
 }
